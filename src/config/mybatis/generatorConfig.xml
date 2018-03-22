@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <context id="cyanTables">
+  
+  	<!-- 数据库连接信息 -->
+    <jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/cyan" driverClass="com.mysql.jdbc.Driver" password="123456" userId="root" />
+    
+    <!-- entity文件位置 -->
+    <javaModelGenerator targetPackage="com.cyan.entity" targetProject="Cyan" />
+    
+    <!-- mapper接口和xml文件位置 -->
+    <sqlMapGenerator targetPackage="com.cyan.mapper" targetProject="Cyan" />
+    <javaClientGenerator targetPackage="com.cyan.mapper" targetProject="Cyan" type="XMLMAPPER" />
+    
+    <!-- 需要倒入的表 -->
+    <table tableName="cart"></table>
+    <table tableName="cartitem"></table>
+    <table tableName="category"></table>
+    <table tableName="creditcard"></table>
+    <table tableName="customer"></table>
+    <table tableName="department"></table>
+    <table tableName="employee"></table>
+    <table tableName="orders"></table>
+    <table tableName="orderdetail"></table>
+    <table tableName="payment"></table>
+    <table tableName="picture"></table>
+    <table tableName="product"></table>
+    <table tableName="review"></table>
+    
+  </context>
+</generatorConfiguration>
